@@ -47,10 +47,11 @@ while (i > 0):
 
     i = i - 1
 
-with open('resultado.txt', 'w') as f:
-    for i in range(96):
-        for j in range(3):
-            f.write(str(qtable[i][j]) + " ")
-        f.write("\n")
+    with open('resultado.txt', 'w') as f:
+        for i in range(96):
+            for j in range(3):
+                f.write(str(qtable[i][j]) + " ")
+            f.write("\n")
+        f.write("\n\n")
 
 
